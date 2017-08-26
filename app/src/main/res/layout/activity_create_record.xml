@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.reganti.rohithraj.pesstudents.CreateRecord">
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/usnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEdit"
+        android:layout_alignStart="@+id/nameEdit"
+        android:layout_below="@+id/nameEdit"
+        android:ems="10"
+        android:hint="Enter USN"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/matEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usnEdit"
+        android:layout_alignStart="@+id/usnEdit"
+        android:layout_below="@+id/usnEdit"
+        android:ems="10"
+        android:hint="Math marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/chemEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matEdit"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Chem marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pcdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chemEdit"
+        android:layout_alignStart="@+id/chemEdit"
+        android:layout_below="@+id/chemEdit"
+        android:ems="10"
+        android:hint="Pcd marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cadEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pcdText"
+        android:layout_alignStart="@+id/pcdText"
+        android:layout_below="@+id/pcdText"
+        android:ems="10"
+        android:hint="Cad marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/elnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cadEdit"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Eln marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pcdlabEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/elnEdit"
+        android:layout_alignStart="@+id/elnEdit"
+        android:layout_below="@+id/elnEdit"
+        android:ems="10"
+        android:hint="PCD Lab marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/clabEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pcdlabEdit"
+        android:layout_alignStart="@+id/pcdlabEdit"
+        android:layout_below="@+id/pcdlabEdit"
+        android:ems="10"
+        android:hint="C Lab marks"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/sgpaEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clabEdit"
+        android:layout_alignStart="@+id/clabEdit"
+        android:layout_below="@+id/clabEdit"
+        android:ems="10"
+        android:hint="SGPA"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/processQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/sgpaEdit"
+        android:layout_centerHorizontal="true"
+        android:text="Process Query"
+
+        android:background="#663399"
+        android:onClick="deleteRecord"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="5dp"
+        android:textAllCaps="false"
+
+
+        android:textSize="27sp"
+
+
+
+        />
+</android.widget.RelativeLayout>

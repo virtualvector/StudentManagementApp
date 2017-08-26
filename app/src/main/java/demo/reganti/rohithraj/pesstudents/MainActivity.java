@@ -120,14 +120,16 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(openDeleteIntent,2);
     }
 
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent){
         super.onActivityResult(requestCode, resultCode, intent);
 
-        if(requestCode==1) {
+        if(requestCode==1 && resultCode==RESULT_OK) {
             objList = (ArrayList<Student>) intent.getSerializableExtra("returnKey");
         }
-        if(requestCode==2){
+        if(requestCode==2 && resultCode==RESULT_OK){
             objList = (ArrayList<Student>) intent.getSerializableExtra("returnKeyFromDelete");
 
         }

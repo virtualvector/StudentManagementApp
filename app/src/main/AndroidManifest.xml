@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewRecord" />
-        <activity android:name=".DeleteActivity"></activity>
+        <activity android:name=".DeleteActivity" />
+        <activity android:name=".CreateRecord"></activity>
     </application>
 
 </manifest>
