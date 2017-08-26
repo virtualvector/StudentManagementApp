@@ -120,6 +120,15 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(openDeleteIntent,2);
     }
 
+    //method to be called when CreateRecord button is clicked
+    public void openCreate (View view){
+
+        Intent openDeleteIntent  = new Intent(MainActivity.this,CreateRecord.class);
+        openDeleteIntent.putExtra("studentObject",objList);
+        startActivityForResult(openDeleteIntent,3);
+
+    }
+
 
 
     @Override
@@ -131,6 +140,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if(requestCode==2 && resultCode==RESULT_OK){
             objList = (ArrayList<Student>) intent.getSerializableExtra("returnKeyFromDelete");
+
+        }
+        if(requestCode==3 && resultCode==RESULT_OK){
+            objList = (ArrayList<Student>) intent.getSerializableExtra("returnKeyFromCreate");
 
         }
 
