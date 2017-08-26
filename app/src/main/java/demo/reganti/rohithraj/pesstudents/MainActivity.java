@@ -20,6 +20,7 @@ import java.util.StringTokenizer;
 
 public class MainActivity extends AppCompatActivity {
 
+    //arrayList storing student data
     ArrayList<Student> objList = new ArrayList<Student>();
     static int value=1;
 
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //method to be called when viewRecord button is clicked
     public void openView(View view) {
 
         Intent openViewerIntent = new Intent(MainActivity.this, ViewRecord.class);
@@ -110,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //method to be called when DeleteRecord button is clicked
     public void openDelete (View view) {
 
         Intent openDeleteIntent  = new Intent(MainActivity.this,DeleteActivity.class);
