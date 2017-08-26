@@ -64,13 +64,13 @@ public class DeleteActivity extends AppCompatActivity {
 //NAME,USN,MAT,CHEM,PCD,CAD,ELN,PLAB,CLAB,SGPA
         String str;
         Log.i("method called", "called");
-        str = obj.getUsn() + "\n\n" + obj.getName() + "\n\n"
-                + obj.getMat() + "\n\n"
-                + obj.getChem() + "\n\n"
-                + obj.getPcd() + "\n\n"
-                + obj.getCad() + "\n\n"
-                + obj.getEln() + "\n\n";
-
+        str = "usn : "+ obj.getUsn() + "\n\n" +"Name : "+ obj.getName() + "\n\n"
+                +"Maths : " + obj.getMat() + "\n\n"
+                + "Chem : " + obj.getChem() + "\n\n"
+                + "Pcd : "+obj.getPcd() + "\n\n"
+                +"cad : " +obj.getCad() + "\n\n"
+                + "eln : "+obj.getEln() + "\n\n"
+                + "sgpa : "+obj.getSgpa();
 
 
         deleteRecordTextView.setText(str);

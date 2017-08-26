@@ -64,7 +64,7 @@
             android:layout_marginLeft="3sp"
             android:textSize="27sp"
             android:textColor="#FFFFFF"
-
+            android:onClick="openUpdate"
 
             android:background="#660099"
             android:layout_weight="1" />

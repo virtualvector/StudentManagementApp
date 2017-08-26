@@ -129,6 +129,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //method to be called when UpdateRecord button is clicked
+    public void openUpdate (View view){
+
+        Intent openDeleteIntent  = new Intent(MainActivity.this,CreateRecord.class);
+        openDeleteIntent.putExtra("studentObject",objList);
+        startActivityForResult(openDeleteIntent,3);
+
+    }
+
 
 
     @Override
