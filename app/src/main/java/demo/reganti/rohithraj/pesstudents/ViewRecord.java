@@ -1,5 +1,6 @@
 package demo.reganti.rohithraj.pesstudents;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -69,6 +70,11 @@ public class ViewRecord extends AppCompatActivity {
         if(!bool){
             Toast.makeText(this, "USN not found", Toast.LENGTH_SHORT).show();
         }
+
+        Intent intent = new Intent();
+        intent.putExtra("returnKey",ObjList);
+        setResult(RESULT_OK,intent);
+        //finish();
 
     }
 

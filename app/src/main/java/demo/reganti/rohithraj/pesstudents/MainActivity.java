@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent openViewerIntent = new Intent(MainActivity.this, ViewRecord.class);
         openViewerIntent.putExtra("studentObject", objList);
-        startActivity(openViewerIntent);
+        startActivityForResult(openViewerIntent,1);
 
     }
 
@@ -117,7 +117,21 @@ public class MainActivity extends AppCompatActivity {
 
         Intent openDeleteIntent  = new Intent(MainActivity.this,DeleteActivity.class);
         openDeleteIntent.putExtra("studentObject",objList);
-        startActivity(openDeleteIntent);
+        startActivityForResult(openDeleteIntent,2);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent){
+        super.onActivityResult(requestCode, resultCode, intent);
+
+        if(requestCode==1) {
+            objList = (ArrayList<Student>) intent.getSerializableExtra("returnKey");
+        }
+        if(requestCode==2){
+            objList = (ArrayList<Student>) intent.getSerializableExtra("returnKeyFromDelete");
+
+        }
+
     }
 
 
